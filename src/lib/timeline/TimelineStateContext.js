@@ -1,9 +1,7 @@
-import React from 'react'
 import PropTypes from 'prop-types'
-import createReactContext from 'create-react-context'
+import React from 'react'
 import {
-  calculateXPositionForTime,
-  calculateTimeForXPosition
+  calculateTimeForXPosition, calculateXPositionForTime
 } from '../utility/calendar'
 
 /* this context will hold all information regarding timeline state:
@@ -30,7 +28,7 @@ const defaultContextState = {
 }
 /* eslint-enable */
 
-const { Consumer, Provider } = createReactContext(defaultContextState)
+const { Consumer, Provider } = useContext(defaultContextState)
 
 export class TimelineStateProvider extends React.Component {
   /* eslint-disable react/no-unused-prop-types */

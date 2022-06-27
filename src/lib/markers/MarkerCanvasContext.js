@@ -1,4 +1,3 @@
-import createReactContext from 'create-react-context'
 
 /* eslint-disable no-console */
 const defaultContextState = {
@@ -8,7 +7,7 @@ const defaultContextState = {
 }
 /* eslint-enable */
 
-const { Consumer, Provider } = createReactContext(defaultContextState)
+const { Consumer, Provider } = useContext(defaultContextState)
 
 export const MarkerCanvasProvider = Provider
 export const MarkerCanvasConsumer = Consumer
