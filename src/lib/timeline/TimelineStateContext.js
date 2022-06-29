@@ -28,7 +28,7 @@ const defaultContextState = {
 }
 /* eslint-enable */
 
-const { Consumer, Provider } = useContext(defaultContextState)
+const { Consumer, Provider } = React.createContext(defaultContextState)
 
 export class TimelineStateProvider extends React.Component {
   /* eslint-disable react/no-unused-prop-types */

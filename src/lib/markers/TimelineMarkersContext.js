@@ -11,7 +11,7 @@ const defaultContextState = {
   }
 }
 
-const { Consumer, Provider } = useContext(defaultContextState)
+const { Consumer, Provider } = React.createContext(defaultContextState)
 
 // REVIEW: is this the best way to manage ids?
 let _id = 0

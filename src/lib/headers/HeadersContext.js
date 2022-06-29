@@ -13,7 +13,7 @@ const defaultContextState = {
   timeSteps: {}
 }
 
-const { Consumer, Provider } = useContext(defaultContextState)
+const { Consumer, Provider } = React.createContext(defaultContextState)
 
 
 export class TimelineHeadersProvider extends React.Component {

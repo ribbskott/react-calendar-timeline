@@ -13,6 +13,8 @@ const staticStyles = {
   bottom: 0
 }
 
+
+
 /**
  * Renders registered markers and exposes a mouse over listener for
  * CursorMarkers to subscribe to
